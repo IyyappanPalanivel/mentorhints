@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Public Sans", 'sans-serif'],
-        dancing: ["Dancing Script", 'cursive']
+        dancing: ["Dancing Script", 'cursive'],
+        anton: ["Anton",'sans-serif']
       },
     },
     colors: {

@@ -13,7 +13,7 @@ const Navbar = () => {
     ];
 
     return (
-        <header className='bg-white flex justify-around items-center p-2'>
+        <header className='w-full bg-white flex justify-around items-center p-2 fixed'>
             <img className='w-40 h-12 object-cover' src={logo} alt='' />
 
             {/* NavItems for Large Devices */}

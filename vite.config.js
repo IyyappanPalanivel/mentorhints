@@ -11,6 +11,7 @@ export default defineConfig({
     alias: {
       'assets': resolve(root, 'assets'),
       'brand': resolve(root, 'assets/brand'),
+      'animations': resolve(root, 'assets/animations'),
     }
   }
 })
