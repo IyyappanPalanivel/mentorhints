@@ -10,6 +10,7 @@ export default defineConfig({
   resolve: {
     alias: {
       'assets': resolve(root, 'assets'),
+      'brand': resolve(root, 'assets/brand'),
     }
   }
 })

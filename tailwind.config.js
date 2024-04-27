@@ -14,7 +14,12 @@ export default {
     colors: {
       'brandPrimary':'#0B93DB',
       'brandSecondary':'#FF914D',
-      'neutralWhite':'#FFFFFF',
+      'skyBlue':"#87ceeb",
+      'white':'#FFFFFF',
+      'gray-dark': '#273444',
+      'gray': '#8492a6',
+      'gray-light': '#d3dce6',
+      'neutralGray': '#6D737A',
     }
   },
   plugins: [],
