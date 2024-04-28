@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Home from '../components/Home';
 import HowItWorks from '../components/HowItWorks';
 import LearnYourWay from '../components/LearnYourWay';
+import Referral from '../components/Referral';
 
 const LandingPage = () => {
     return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
         <Home/>
         <HowItWorks/>
         <LearnYourWay/>
+        <Referral/>
         </>
     );
 };

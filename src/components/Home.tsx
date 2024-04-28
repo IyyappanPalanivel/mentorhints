@@ -40,7 +40,7 @@ const Home = () => {
 
             <div>
                 {/* Find a Mentor */}
-                <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-sans font-semibold text-2xl'>
+                <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-sans font-semibold text-2xl transition-all duration-300'>
                     Find a Mentor
                 </button>
             </div>
