@@ -11,3 +11,7 @@
   will-change: filter;
   transition: filter 300ms;
 } */
+
+header{
+  z-index: 10001 !important;
+}
