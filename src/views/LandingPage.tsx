@@ -7,6 +7,7 @@ import Referral from '../components/Referral';
 import GetStarted from '../components/GetStarted';
 import Feedback from '../components/Feedback';
 import Blogs from '../components/Blogs';
+import Join from '../components/Join';
 
 const LandingPage = () => {
     return (
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <GetStarted/>
         <Feedback/>
         <Blogs/>
+        <Join/>
         </>
     );
 };
