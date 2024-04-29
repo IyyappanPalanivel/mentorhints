@@ -35,7 +35,7 @@ const Feedback = () => {
 
     const Feedback = ({ id, username, designation, description }) => {
         return (
-            <div className="bg-white rounded-lg shadow-md max-w-sm p-4">
+            <div className="feedback-card bg-white rounded-lg shadow-md max-w-sm p-4">
                 <div className='flex justify-between'>
                     {/* User details */}
                     <div className='flex gap-2'>
