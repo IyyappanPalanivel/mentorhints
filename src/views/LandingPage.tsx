@@ -8,6 +8,7 @@ import GetStarted from '../components/GetStarted';
 import Feedback from '../components/Feedback';
 import Blogs from '../components/Blogs';
 import Join from '../components/Join';
+import Footer from '../components/Footer';
 
 const LandingPage = () => {
     return (
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <Feedback/>
         <Blogs/>
         <Join/>
+        <Footer/>
         </>
     );
 };
