@@ -22,6 +22,7 @@ export default {
       'gray': '#6D737A',
       'gray-light': '#d3dce6',
       'neutralGray': '#6D737A',
+      'neutralDGray': '#363A3D',
     }
   },
   plugins: [],
