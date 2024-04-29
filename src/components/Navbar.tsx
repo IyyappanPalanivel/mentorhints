@@ -9,7 +9,7 @@ const Navbar = () => {
         { link: 'About', path: 'about' },
         { link: 'Tech Network', path: 'technetwork' },
         { link: 'Blog', path: 'blog' },
-        { link: 'Contact', path: 'contact' },
+        { link: 'Contact', path: 'footer' },
     ];
 
     return (

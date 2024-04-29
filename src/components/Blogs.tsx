@@ -55,7 +55,7 @@ const Blogs = () => {
     }
 
     return (
-        <div className='max-w-full items-center justify-center md:p-8'>
+        <div className='max-w-full items-center justify-center md:p-8' id='blog'>
             {/* Section title */}
             <div className='flex flex-col items-center'>
                 <div>
