@@ -37,9 +37,9 @@ const Footer = () => {
                     {/* Company */}
                     <div className='flex flex-col gap-4'>
                         <h4 className='font-semibold text-neutralWhite text-lg'>Support</h4>
-                        <p className='text-neutralSilver text-xs font-normal font-sans'>FAQ</p>
-                        <p className='text-neutralSilver text-xs font-normal font-sans'>Privacy policy</p>
-                        <p className='text-neutralSilver text-xs font-normal font-sans'>Terms & Conditions</p>
+                        <p className='text-neutralSilver text-xs font-normal font-poppins'>FAQ</p>
+                        <p className='text-neutralSilver text-xs font-normal font-poppins'>Privacy policy</p>
+                        <p className='text-neutralSilver text-xs font-normal font-poppins'>Terms & Conditions</p>
                     </div>
 
                     {/* Stay up to date */}

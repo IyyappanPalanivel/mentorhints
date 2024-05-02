@@ -36,8 +36,8 @@ const GetStarted = () => {
                     <span className="text-xl font-bold text-gray-800">{step} Step</span>
                 </div> */}
                 <div className="px-4 py-4">
-                    <h3 className="font-bold text-xl font-sans">{title}</h3>
-                    <p className="text-sm text-gray font-sans">{description}</p>
+                    <h3 className="font-bold text-xl font-poppins">{title}</h3>
+                    <p className="text-sm text-gray font-poppins">{description}</p>
                 </div>
             </div>
         )
@@ -47,9 +47,9 @@ const GetStarted = () => {
         <div className='max-w-full items-center justify-center p-4 md:p-14 bg-lightBlue'>
             {/* Section title: How To Get Started*/}
             <div className='flex md:flex-row text-center items-center justify-center '>
-                <h1 className='text-2xl md:text-4xl font-sans font-semibold'>How to</h1>
+                <h1 className='text-2xl md:text-4xl font-poppins font-semibold'>How to</h1>
                 <div className='px-2 items-center flex flex-col pt-2'>
-                    <h1 className='text-2xl md:text-4xl font-sans font-semibold text-brandPrimary'>Get Started</h1>
+                    <h1 className='text-2xl md:text-4xl font-poppins font-semibold text-brandPrimary'>Get Started</h1>
                     <img className='w-36 h-2' src={underline} alt='' />
                 </div>
             </div>

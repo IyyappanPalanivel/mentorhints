@@ -41,15 +41,15 @@ const Feedback = () => {
                     <div className='flex gap-2'>
                         <img className='w-14 h-14' src={jenny} alt='' />
                         <div>
-                            <h1 className='font-sans text-base font-semibold'>{username}</h1>
-                            <p className='font-sans text-sm font-normal'>{designation}</p>
+                            <h1 className='font-poppins text-base font-semibold'>{username}</h1>
+                            <p className='font-poppins text-sm font-normal'>{designation}</p>
                         </div>
                     </div>
                     <img className='w-9 h-8' src={quatation} alt='' />
                 </div>
 
                 {/* Feedback content */}
-                <p className='font-sans text-sm font-normal pt-5 text-neutralDGray'>{description}</p>
+                <p className='font-poppins text-sm font-normal pt-5 text-neutralDGray'>{description}</p>
             </div>
         )
     }
@@ -58,15 +58,15 @@ const Feedback = () => {
         <div className='max-w-full items-center justify-center p-4 md:p-14'>
             {/* Section title: Student Feedback */}
             <div className='flex md:flex-row text-center items-center justify-center '>
-                <h1 className='text-2xl md:text-4xl font-sans font-semibold'>Student</h1>
+                <h1 className='text-2xl md:text-4xl font-poppins font-semibold'>Student</h1>
                 <div className='px-2 items-center flex flex-col pt-2'>
-                    <h1 className='text-2xl md:text-4xl font-sans font-semibold text-brandPrimary'>Feedback</h1>
+                    <h1 className='text-2xl md:text-4xl font-poppins font-semibold text-brandPrimary'>Feedback</h1>
                     <img className='w-36 h-2' src={underline} alt='' />
                 </div>
             </div>
 
             {/* Section desc */}
-            <h1 className='text-xl font-sans font-normal text-gray text-center py-6'>Various versions have evolved over the years, sometimes by accident,</h1>
+            <h1 className='text-base font-poppins font-normal text-gray text-center py-6'>Various versions have evolved over the years, sometimes by accident,</h1>
 
             {/* Feedbacks List */}
             <div className='mt-14 grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto gap-12'>

@@ -16,10 +16,10 @@ const Referral = () => {
         <div className='max-w-full items-center justify-center p-4 md:p-14'>
             {/* Section title: Referral from top companies*/}
             <div className='flex md:flex-row text-center items-center justify-center '>
-                <h1 className='text-2xl md:text-4xl font-sans font-semibold bg-brandSecondary px-2'>Referral</h1>
-                <h1 className='text-2xl md:text-4xl font-sans font-semibold pl-2'>from</h1>
+                <h1 className='text-2xl md:text-4xl font-poppins font-semibold bg-brandSecondary px-2'>Referral</h1>
+                <h1 className='text-2xl md:text-4xl font-poppins font-semibold pl-2'>from</h1>
                 <div className='px-2 items-center flex flex-col pt-2'>
-                    <h1 className='text-2xl md:text-4xl font-sans font-semibold text-brandPrimary'>Top Companies</h1>
+                    <h1 className='text-2xl md:text-4xl font-poppins font-semibold text-brandPrimary'>Top Companies</h1>
                     <img className='w-36 h-2' src={underline} alt='' />
                 </div>
             </div>

@@ -20,12 +20,12 @@ const Navbar = () => {
             <ul className='md:flex space-x-12 hidden'>
                 {
                     navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} key={path}
-                        offset={-100} className='block cursor-pointer text-base text-neutralGray font-sans font-medium hover:text-brandPrimary first:font-medium'>{link}</Link>)
+                        offset={-100} className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary first:text-brandPrimary'>{link}</Link>)
                 }
             </ul>
 
             {/* Find a Mentor */}
-            <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-sans font-semibold transition-all duration-300'>
+            <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
                 Find a Mentor
             </button>
         </header>

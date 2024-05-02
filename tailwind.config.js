@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         sans: ["Public Sans", 'sans-serif'],
         dancing: ["Dancing Script", 'cursive'],
-        anton: ["Anton",'sans-serif']
+        anton: ["Anton",'sans-serif'],
+        poppins: ["Poppins",'sans-serif'],
       },
     },
     colors: {
@@ -23,6 +24,7 @@ export default {
       'gray-light': '#d3dce6',
       'neutralGray': '#6D737A',
       'neutralDGray': '#363A3D',
+      'navTextColor': '#131B20',
     }
   },
   plugins: [],
