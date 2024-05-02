@@ -33,8 +33,7 @@ const Footer = () => {
                         <h4 className='font-semibold text-neutralWhite text-lg'>Support</h4>
                         <p className='text-neutralSilver text-xs font-normal font-poppins'>FAQ</p>
                         <p className='text-neutralSilver text-xs font-normal font-poppins'>Privacy policy</p>
-                        <p className='text-neutralSilver text-xs font-normal font-poppins'>Terms & Conditions</p>
-                        <Link className='text-neutralSilver text-xs font-normal font-poppins' to="/terms">Terms</Link>
+                        <Link className='text-neutralSilver text-xs font-normal font-poppins' to="/terms">Terms & Conditions</Link>
                     </div>
 
                     {/* Stay up to date */}

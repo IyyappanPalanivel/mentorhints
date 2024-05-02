@@ -10,12 +10,14 @@ import Blogs from '../components/Blogs';
 import Join from '../components/Join';
 import Footer from '../components/Footer';
 import BookTrail from '../components/BookTrail';
+import PopularMentors from '../components/PopularMentors';
 
 const LandingPage = () => {
     return (
         <>
         <Navbar/>
         <Home/>
+        <PopularMentors/>
         <HowItWorks/>
         <LearnYourWay/>
         <Referral/>
