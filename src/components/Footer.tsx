@@ -5,6 +5,7 @@ import Facebook from 'assets/socialmedia/Facebook.png';
 import Instagram from 'assets/socialmedia/Instagram.png';
 import Linkedin from 'assets/socialmedia/Linkedin.png';
 import Twitter from 'assets/socialmedia/Twitter.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -26,13 +27,6 @@ const Footer = () => {
 
                 {/* Sections */}
                 <div className='md:w-2/3 flex gap-4 justify-around pt-10'>
-                    {/* Company */}
-                    {/* <div className='flex flex-col gap-4'>
-                    <h4 className='font-semibold text-neutralWhite text-lg'>Company</h4>
-                    <p className='text-neutralSilver text-xs font-normal'>About us</p>
-                    <p className='text-neutralSilver text-xs font-normal'>Contact us</p>
-                    <p className='text-neutralSilver text-xs font-normal'>Pricing</p>
-                </div> */}
 
                     {/* Company */}
                     <div className='flex flex-col gap-4'>
@@ -40,6 +34,7 @@ const Footer = () => {
                         <p className='text-neutralSilver text-xs font-normal font-poppins'>FAQ</p>
                         <p className='text-neutralSilver text-xs font-normal font-poppins'>Privacy policy</p>
                         <p className='text-neutralSilver text-xs font-normal font-poppins'>Terms & Conditions</p>
+                        <Link className='text-neutralSilver text-xs font-normal font-poppins' to="/terms">Terms</Link>
                     </div>
 
                     {/* Stay up to date */}
