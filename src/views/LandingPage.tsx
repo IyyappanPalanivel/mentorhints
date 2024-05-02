@@ -9,6 +9,7 @@ import Feedback from '../components/Feedback';
 import Blogs from '../components/Blogs';
 import Join from '../components/Join';
 import Footer from '../components/Footer';
+import BookTrail from '../components/BookTrail';
 
 const LandingPage = () => {
     return (
@@ -23,6 +24,10 @@ const LandingPage = () => {
         <Blogs/>
         <Join/>
         <Footer/>
+        {/* Conditional rendering for BookTrail component */}
+        <div className="fixed bottom-0 w-full sm:hidden"> {/* Apply fixed positioning only on small screens */}
+            <BookTrail/>
+        </div>
         </>
     );
 };
