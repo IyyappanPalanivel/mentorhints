@@ -3,13 +3,13 @@ import GroupDiscuss from 'assets/GroupDiscuss.png';
 
 const Join = () => {
     return (
-        <div className='bg-lightBlue flex items-center justify-center gap-8 p-16'>
+        <div className='bg-lightBlue flex flex-col md:flex-row items-center justify-center gap-8 p-4 md:p-16'>
             <div>
                 <img className='h-auto w-96' src={GroupDiscuss} alt='' />
             </div>
 
             {/* Join the best learnig platform */}
-            <div>
+            <div className='text-center md:text-left'>
                 <h1 className='font-poppins text-2xl md:text-4xl font-semibold'>Join the <span className='font-poppins text-2xl md:text-4xl  font-semibold text-brandPrimary'>best learning</span></h1>
                 <h1 className='font-poppins text-2xl md:text-4xl font-semibold'>Platform</h1>
 

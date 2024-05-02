@@ -34,7 +34,7 @@ const Blogs = () => {
 
     const Blog = ({id,title,description}) => {
         return (
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:-translate-y-2 transition-all duration-300">
+            <div className="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:-translate-y-2 transition-all duration-300">
                 <a href="#">
                     <img className="rounded-t-lg" src={posing} alt="" />
                 </a>
@@ -55,7 +55,7 @@ const Blogs = () => {
     }
 
     return (
-        <div className='max-w-full items-center justify-center md:p-8' id='blog'>
+        <div className='max-w-full items-center justify-center p-3 md:p-8' id='blog'>
             {/* Section title */}
             <div className='flex flex-col items-center'>
                 <div>
@@ -71,7 +71,7 @@ const Blogs = () => {
             <h1 className='text-base font-poppins font-normal text-gray text-center py-6'>Various versions have evolved over the years, sometimes by accident,</h1>
 
             {/* Blogs List */}
-            <div className='mt-4 grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto gap-12'>
+            <div className='mt-4 grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto gap-12 mb-2'>
                 {
                     blogsData.map(blog =>
                         <Blog key={blog.id} {...blog} />

@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='max-w-screen-2xl pb-8 px-4 md:px-14' id='footer'>
+        <div className='max-w-screen-2xl pb-8 md:px-14' id='footer'>
             {/* Section 1 */}
-            <div className='flex md:flex-row flex-col'>
+            <div className='flex md:flex-row flex-col items-center'>
                 {/* Company Details */}
                 <div className='md:w-1/3 flex flex-col'>
                     <img className='h-auto w-36' src={logo} />
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
 
                 {/* Sections */}
-                <div className='md:w-2/3 flex gap-4 justify-around pt-10'>
+                <div className='md:w-2/3 flex flex-col items-center text-center md:flex-row md:text-left md:items-start gap-4 justify-around pt-10'>
 
                     {/* Company */}
                     <div className='flex flex-col gap-4'>

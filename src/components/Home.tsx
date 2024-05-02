@@ -5,9 +5,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
     return (
-        <div className='max-w-full bg-skyBlue py-20 items-center justify-center flex flex-col'>
+        <div className='max-w-full bg-skyBlue pt-28 pb-20 items-center justify-center flex flex-col'>
 
-            <div className=' w-full md:flex justify-center items-center md:justify-around'>
+            <div className='w-full flex flex-col text-center justify-center items-center md:flex-row md:justify-around'>
                 {/* Mentor Helps you to Upgrade your skill/Get Interview/Crack Interview... */}
                 <div>
                     <h1 className='md:text-6xl text-5xl font-anton tracking-wider font-normal'>Mentor Helps You</h1>

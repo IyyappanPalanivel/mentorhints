@@ -28,7 +28,7 @@ const GetStarted = () => {
 
     const Card = ({ step, title, description }) => {
         return (
-            <div className="bg-white rounded-lg shadow-md max-w-sm hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300">
+            <div className="mx-auto bg-white rounded-lg shadow-md max-w-sm hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300">
                 <div className='flex items-center justify-center bg-brandPrimary rounded-t-lg'>
                     <img className='w-44 h-44' src={TellGoal} alt=''/> 
                 </div>

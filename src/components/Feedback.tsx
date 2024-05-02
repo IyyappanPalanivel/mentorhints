@@ -35,7 +35,7 @@ const Feedback = () => {
 
     const Feedback = ({ id, username, designation, description }) => {
         return (
-            <div className="feedback-card bg-white rounded-lg shadow-md max-w-sm p-4">
+            <div className="feedback-card mx-auto bg-white rounded-lg shadow-md max-w-sm p-4">
                 <div className='flex justify-between'>
                     {/* User details */}
                     <div className='flex gap-2'>
@@ -61,7 +61,7 @@ const Feedback = () => {
                 <h1 className='text-2xl md:text-4xl font-poppins font-semibold'>Student</h1>
                 <div className='px-2 items-center flex flex-col pt-2'>
                     <h1 className='text-2xl md:text-4xl font-poppins font-semibold text-brandPrimary'>Feedback</h1>
-                    <img className='w-36 h-2' src={underline} alt='' />
+                    <img className='w-32 h-2' src={underline} alt='' />
                 </div>
             </div>
 
@@ -69,7 +69,7 @@ const Feedback = () => {
             <h1 className='text-base font-poppins font-normal text-gray text-center py-6'>Various versions have evolved over the years, sometimes by accident,</h1>
 
             {/* Feedbacks List */}
-            <div className='mt-14 grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto gap-12'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto md:gap-12'>
                 {
                     feedbacksData.map(feedback =>
                         <Feedback key={feedback.id} {...feedback} />

@@ -15,10 +15,10 @@ const Referral = () => {
     return (
         <div className='max-w-full items-center justify-center p-4 md:p-14'>
             {/* Section title: Referral from top companies*/}
-            <div className='flex md:flex-row text-center items-center justify-center '>
+            <div className='flex flex-col md:flex-row text-center items-center justify-center '>
                 <h1 className='text-2xl md:text-4xl font-poppins font-semibold bg-brandSecondary px-2'>Referral</h1>
                 <h1 className='text-2xl md:text-4xl font-poppins font-semibold pl-2'>from</h1>
-                <div className='px-2 items-center flex flex-col pt-2'>
+                <div className='px-2 items-center flex flex-col md:pt-2'>
                     <h1 className='text-2xl md:text-4xl font-poppins font-semibold text-brandPrimary'>Top Companies</h1>
                     <img className='w-36 h-2' src={underline} alt='' />
                 </div>
@@ -35,7 +35,7 @@ const Referral = () => {
                 {/* Companies */}
                 <div className='grid grid-cols-3 md:gap-4 items-center justify-center'>
                     <Lottie className='w-36 h-36' animationData={google} loop={true} />
-                    <Lottie className='w-36 h-36' animationData={zoho} loop={true} />
+                    <Lottie className='w-28 h-28 pl-2' animationData={zoho} loop={true} />
                     <Lottie className='w-36 h-36' animationData={amazon} loop={true} />
                     <Lottie className='w-36 h-36' animationData={amazon} loop={true} />
                     <Lottie className='w-36 h-36' animationData={Apple} loop={true} />
