@@ -3,8 +3,8 @@ import Commitment from 'assets/about/Commitment.png'
 
 const WhatIsMentorHints = () => {
     return (
-        <section className="w-full flex p-8 gap-2">
-            <div className='w-2/3'>
+        <section className="w-full flex flex-col md:flex-row p-8 gap-2 text-center md:text-left">
+            <div className='md:w-2/3'>
                 <h1 className='font-poppins font-extrabold text-4xl'>What is Mentorhints?</h1>
                 <h2 className='font-poppins font-semibold text-base py-2'>Mentorhints is a secret weapon for the techies.</h2>
                 <h2 className='font-poppins '><span className='font-semibold text-base'>Our Mission</span> is clear : To bridge the gap between ambition and expertise</h2>
@@ -20,7 +20,7 @@ const WhatIsMentorHints = () => {
                 At MENTOR HINTS, we have a straightforward goal: to help you move from wanting to knowing. Whether you're just starting out in software or already have experience and want to learn more, we're here to support you every step of the way to success.
                 </p>
             </div>
-            <div className='w-1/3'>
+            <div className='md:w-1/3'>
                 <img src={Commitment} alt='' />
             </div>
         </section>
