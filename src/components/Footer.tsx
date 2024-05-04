@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-4'>
                         <h4 className='font-semibold text-neutralWhite text-lg'>Support</h4>
                         <p className='text-neutralSilver text-xs font-normal font-poppins'>FAQ</p>
-                        <p className='text-neutralSilver text-xs font-normal font-poppins'>Privacy policy</p>
+                        <Link className='text-neutralSilver text-xs font-normal font-poppins' to="/privacypolicy">Privacy policy</Link>
                         <Link className='text-neutralSilver text-xs font-normal font-poppins' to="/terms">Terms & Conditions</Link>
                     </div>
 
