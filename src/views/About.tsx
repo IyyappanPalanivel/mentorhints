@@ -5,6 +5,7 @@ import HeroSection from '../components/about/HeroSection';
 import WhatIsMentorHints from '../components/about/WhatIsMentorHints';
 import WhyWe from '../components/about/WhyWe';
 import Commitment from '../components/about/Commitment';
+import TalkToExperts from '../components/about/TalkToExperts';
 
 const About = () => {
 
@@ -34,6 +35,7 @@ const About = () => {
             <WhatIsMentorHints/>
             <WhyWe/>
             <Commitment/>
+            <TalkToExperts/>
         </div>
     );
 };

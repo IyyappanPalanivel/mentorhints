@@ -3,9 +3,8 @@ import commitment from 'assets/about/Commitment.png';
 
 const Commitment = () => {
     return (
-        <section className="w-full">
-            
-            <div className='flex flex-col md:flex-row p-8 gap-2 text-center md:text-left'>
+        <section className="w-full p-8">
+            <div className='flex flex-col md:flex-row gap-2 text-center md:text-left'>
                 {/* Our Commitment to excellence */}
                 <div className='md:w-2/3 justify-between flex flex-col'>
                     <h1 className='font-poppins font-extrabold text-4xl'>Our Commitment to Excellence</h1>
@@ -25,7 +24,7 @@ const Commitment = () => {
             </div>
 
             {/* "STAY CONNECTED WITH US, ADVANCE CONGRATS ON YOUR EXCITING NEW JOURNEY" */}
-            <h1 className='text-center font-poppins font-medium text-2xl'>"STAY CONNECTED WITH US, ADVANCE CONGRATS ON YOUR EXCITING NEW JOURNEY"</h1>
+            <h1 className='text-center font-poppins font-medium text-2xl mt-4'>"STAY CONNECTED WITH US, ADVANCE CONGRATS ON YOUR EXCITING NEW JOURNEY"</h1>
         </section>
     );
 };
