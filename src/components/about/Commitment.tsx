@@ -1,5 +1,5 @@
 import React from 'react';
-import commitment from 'assets/about/Commitment.png';
+import OnlineJoin from 'assets/about/OnlineJoin.png';
 
 const Commitment = () => {
     return (
@@ -19,7 +19,7 @@ const Commitment = () => {
                 </div>
                 {/* Image */}
                 <div className='md:w-1/3'>
-                    <img src={commitment} alt='' />
+                    <img className='rounded' src={OnlineJoin} alt='' />
                 </div>
             </div>
 

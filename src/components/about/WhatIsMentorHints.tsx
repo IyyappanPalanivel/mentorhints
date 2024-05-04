@@ -21,7 +21,7 @@ const WhatIsMentorHints = () => {
                 </p>
             </div>
             <div className='md:w-1/3'>
-                <img src={Commitment} alt='' />
+                <img className='rounded' src={Commitment} alt='' />
             </div>
         </section>
     );

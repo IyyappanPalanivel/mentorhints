@@ -1,5 +1,5 @@
 import React from 'react';
-import Commitment from 'assets/about/Commitment.png'
+import WhyChoose from 'assets/about/WhyChoose.png'
 
 const WhyWe = () => {
     return (
@@ -16,7 +16,7 @@ const WhyWe = () => {
                 </ul>
             </div>
             <div className='md:w-1/3 md:mt-0 mt-4'>
-                <img src={Commitment} alt='' />
+                <img className='rounded' src={WhyChoose} alt='' />
             </div>
         </section>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import Commitment from 'assets/about/Commitment.png';
+import talktoexperts from 'assets/about/talktoexperts.jpg';
 
 const TalkToExperts = (props) => {
 
@@ -16,8 +16,8 @@ const TalkToExperts = (props) => {
                     Get a free demo
                 </button>
             </div>
-            <div className=''>
-                <img className='w-80 h-60 rounded' src={Commitment} alt='' />
+            <div className='flex items-center justify-center mt-4 md:mt-0'>
+                <img className='w-80 h-60 rounded' src={talktoexperts} alt='' />
             </div>
         </section>
     );
