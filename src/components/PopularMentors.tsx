@@ -4,10 +4,13 @@ import Arun from 'assets/mentors/Arun.jpeg';
 import Iyyappan from 'assets/mentors/Iyyappan.jpeg';
 import Vengadesh from 'assets/mentors/Vengadesh.jpeg';
 import Ram from 'assets/mentors/Ram.jpeg';
+import MentorDetailsModal from './modal/MentorDetailsModal';
 
 const PopularMentors = () => {
 
     const [selectedDomain, setSelectedDomain] = useState('All') // State for selected domain
+    const [showMentorDetails, setShowMentorDetails] = useState(false);
+    const [selectedMentor, setSelectedMentor] = useState(null); // State for selected mentor data
 
     const domains = ['All', 'Designing', 'Frontend', 'Backend', 'Android', 'iOS'] // List of domains
 
@@ -57,11 +60,17 @@ const PopularMentors = () => {
 
     const filteredDevs = filterDevs(devData)
 
-    const DevCard = ({ name, image, experience, designation, skills }) => {
+    const DevCard = ({ name, image, experience, designation, skills, onClick }) => {
+        const handleCardClick = () => {
+            onClick({ name, image, experience, designation, skills });
+        };
+
         return (
-            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] m-2 md:m-0">
+            <div
+                onClick={handleCardClick}
+                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] m-2 md:m-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300">
                 {/* Profile Image */}
-                <img className='w-full aspect-square object-cover rounded-lg' src={image} alt=''/> 
+                <img className='w-full aspect-square object-cover rounded-lg transform transition duration-500 hover:scale-95' src={image} alt='' />
                 {/* Name & Experience */}
                 <div className="flex justify-between px-4 pt-4">
                     <h3 className="text-lg font-medium text-gray-800 font-poppins">{name}</h3>
@@ -75,6 +84,12 @@ const PopularMentors = () => {
             </div>
         )
     }
+
+    const handleCardClick = (mentorData) => {
+        setShowMentorDetails(true);
+        // Set the selected mentor data in state to be passed to the modal
+        setSelectedMentor(mentorData);
+    };
 
     return (
         <div className='max-w-full items-center justify-center py-4 md:p-14 bg-lightBlue' id='mentors'>
@@ -106,10 +121,18 @@ const PopularMentors = () => {
                 {/* Mentors List */}
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto">
                     {filteredDevs.map((dev) => (
-                        <DevCard key={dev.name} {...dev} />
+                        <DevCard key={dev.name} {...dev} onClick={handleCardClick}/>
                     ))}
                 </div>
             </div>
+
+            {/* Mentor Details Modal */}
+            {showMentorDetails && selectedMentor && (
+                <MentorDetailsModal
+                    mentorData={selectedMentor}
+                    closeModal={() => setShowMentorDetails(false)}
+                />
+            )}
         </div>
     );
 };
