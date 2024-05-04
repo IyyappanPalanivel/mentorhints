@@ -37,7 +37,7 @@ const LandingPage = () => {
             <FindMentorModal showModal={showEnquiry} toggleModal={toggleEnquiry} />
             {/* Conditional rendering for BookTrail component */}
             <div className="fixed bottom-0 w-full sm:hidden"> {/* Apply fixed positioning only on small screens */}
-                <BookTrail />
+                <BookTrail toggleEnquiry={toggleEnquiry} />
             </div>
         </>
     );
