@@ -41,9 +41,9 @@ const Navbar = (props) => {
     }
 
     return (
-        <header className='w-full bg-white fixed top-0 left-0 right-0 py-2'>
+        <header className='w-full bg-white fixed top-0 left-0 right-0'>
             <nav className={`lg:px-14 px-4 ${isSticky ? "sticky top-0 left-0 right-0 border-b bg-white duration-300 " : ""} `}>
-                <div className='flex justify-between items-center text-base gap-8'>
+                <div className='flex justify-between items-center text-base gap-8 py-2'>
                     {/* Brand GreyMatterLogo */}
                     <a href='' className='text-2xl font-semibold flex items-center space-x-3'>
                         <img className='w-40 h-12 object-cover' src={logo} alt='' />
