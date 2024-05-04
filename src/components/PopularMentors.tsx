@@ -57,7 +57,7 @@ const PopularMentors = () => {
 
     const DevCard = ({ name, image, experience, designation, skills }) => {
         return (
-            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb]">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] m-2 md:m-0">
                 {/* Profile Image */}
                 <img className='w-full aspect-square object-cover rounded-lg' src={image} alt=''/> 
                 {/* Name & Experience */}

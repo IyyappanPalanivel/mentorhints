@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
 
             {/* Copyrights */}
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-10 md:pb-0'>
                 <img className='w-96 h-auto' src={MentorhintsOutline} alt=''/>
                 <p className='text-neutralSilver text-xs'>Copyright © 2024 Mentor Hint  Inc. All rights reserved</p>
             </div>

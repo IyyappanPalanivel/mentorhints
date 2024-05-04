@@ -28,14 +28,14 @@ const Referral = () => {
             <div className='flex flex-col md:flex-row justify-center items-center md:gap-8'>
                 {/* ReferralHiring Animation */}
                 <div className='justify-center items-center md:pt-12'>
-                    <Lottie className='w-96 h-96' animationData={ReferralHiring} loop={true} />
+                    <Lottie className='w-80 h-80 md:w-96 md:h-96' animationData={ReferralHiring} loop={true} />
                 </div>
 
 
                 {/* Companies */}
-                <div className='grid grid-cols-3 md:gap-4 items-center justify-center'>
+                <div className='grid grid-cols-2 md:grid-cols-3 md:gap-4 items-center justify-center'>
                     <Lottie className='w-36 h-36' animationData={google} loop={true} />
-                    <Lottie className='w-28 h-28 pl-2' animationData={zoho} loop={true} />
+                    <Lottie className='w-28 h-28' animationData={zoho} loop={true} />
                     <Lottie className='w-36 h-36' animationData={amazon} loop={true} />
                     <Lottie className='w-36 h-36' animationData={amazon} loop={true} />
                     <Lottie className='w-36 h-36' animationData={Apple} loop={true} />

@@ -38,7 +38,7 @@ const LearnYourWay = () => {
                     <h1 className='text-base font-poppins font-normal text-gray py-6 text-center md:text-left'>Take classes when you’re free. You can easily do it alongside your full time job or over the weekends.</h1>
                 </div>
                 {/* Learning Animation */}
-                <Lottie className='w-96 h-96' animationData={Learning} loop={true} />
+                <Lottie className='w-72 h-72 md:w-96 md:h-96' animationData={Learning} loop={true} />
             </div>
         </div>
     );
