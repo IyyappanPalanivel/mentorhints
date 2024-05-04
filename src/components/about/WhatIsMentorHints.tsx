@@ -1,5 +1,5 @@
 import React from 'react';
-import Commitment from 'assets/about/Commitment.png'
+import Commitment from 'assets/about/Commitment.png';
 
 const WhatIsMentorHints = () => {
     return (

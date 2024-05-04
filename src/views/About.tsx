@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import HeroSection from '../components/about/HeroSection';
 import WhatIsMentorHints from '../components/about/WhatIsMentorHints';
 import WhyWe from '../components/about/WhyWe';
+import Commitment from '../components/about/Commitment';
 
 const About = () => {
 
@@ -32,6 +33,7 @@ const About = () => {
             <HeroSection/>
             <WhatIsMentorHints/>
             <WhyWe/>
+            <Commitment/>
         </div>
     );
 };
