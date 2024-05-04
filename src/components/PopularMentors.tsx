@@ -3,12 +3,13 @@ import underline from 'assets/underline.png';
 import Arun from 'assets/mentors/Arun.jpeg';
 import Iyyappan from 'assets/mentors/Iyyappan.jpeg';
 import Vengadesh from 'assets/mentors/Vengadesh.jpeg';
+import Ram from 'assets/mentors/Ram.jpeg';
 
 const PopularMentors = () => {
 
     const [selectedDomain, setSelectedDomain] = useState('All') // State for selected domain
 
-    const domains = ['All', 'Designing', 'Front end', 'Backend', 'Android', 'iOS'] // List of domains
+    const domains = ['All', 'Designing', 'Frontend', 'Backend', 'Android', 'iOS'] // List of domains
 
     const devData = [
         {
@@ -21,22 +22,23 @@ const PopularMentors = () => {
         {
             name: 'Arun',
             image: Arun,
-            experience: '12 yrs',
+            experience: '8 yrs',
             designation: 'Backend Developer @Google',
             skills: 'Java, Oracle, Spring boot, Kafka, Backend',
         },
         {
             name: 'Vengadesh',
             image: Vengadesh,
-            experience: '8 yrs',
+            experience: '10 yrs',
             designation: 'Backend Developer @Google',
             skills: 'Java, Oracle, Spring boot, Kafka, Backend',
         },
         {
-            name: 'IlanKumaran',
-            experience: '12 yrs',
-            designation: 'VP at JP Morgan Chase & Co',
-            skills: 'Java, Oracle, Spring boot, Kafka, Backend',
+            name: 'Ram Kumar',
+            image: Ram,
+            experience: '2 yrs',
+            designation: 'Mobile App Developer @Techno Tackle Software Solutions',
+            skills: 'React Native, React, Frontend, Javascript, Typescript',
         },
         // Add more developer objects here
     ]
