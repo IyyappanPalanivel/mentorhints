@@ -4,9 +4,9 @@ import commitment from 'assets/about/Commitment.png';
 const Commitment = () => {
     return (
         <section className="w-full">
-            {/* Our Commitment to excellence */}
+            
             <div className='flex flex-col md:flex-row p-8 gap-2 text-center md:text-left'>
-                {/* Our Commitment */}
+                {/* Our Commitment to excellence */}
                 <div className='md:w-2/3 justify-between flex flex-col'>
                     <h1 className='font-poppins font-extrabold text-4xl'>Our Commitment to Excellence</h1>
                     <p className='py-2 font-poppins text-base text-gray'>
@@ -25,7 +25,7 @@ const Commitment = () => {
             </div>
 
             {/* "STAY CONNECTED WITH US, ADVANCE CONGRATS ON YOUR EXCITING NEW JOURNEY" */}
-
+            <h1 className='text-center font-poppins font-medium text-2xl'>"STAY CONNECTED WITH US, ADVANCE CONGRATS ON YOUR EXCITING NEW JOURNEY"</h1>
         </section>
     );
 };
