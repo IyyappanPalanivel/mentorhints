@@ -24,7 +24,7 @@ const LearnYourWay = () => {
             {/* Make Mentor Hint Moves in Your Career */}
             <div className='flex flex-col md:flex-row justify-around items-center'>
                 <div className='md:w-1/3'>
-                    <h1 className='text-4xl text-center md:text-left'>Make Mentor Hint moves in your career</h1>
+                    <h1 className='text-2xl md:text-4xl text-center md:text-left'>Make Mentor Hint moves in your career</h1>
                     <h1 className='text-base font-poppins font-normal text-gray py-6 text-center md:text-left'>Access top software developers who help you switch to a tech role or get promoted</h1>
                 </div>
                 {/* Working Animation */}
@@ -34,7 +34,7 @@ const LearnYourWay = () => {
             {/* Upskill on your own time */}
             <div className='flex flex-col md:flex-row-reverse justify-around items-center'>
                 <div className='md:w-1/3'>
-                    <h1 className='text-4xl text-center md:text-left'>Upskill on your own time</h1>
+                    <h1 className='text-2xl md:text-4xl text-center md:text-left'>Upskill on your own time</h1>
                     <h1 className='text-base font-poppins font-normal text-gray py-6 text-center md:text-left'>Take classes when you’re free. You can easily do it alongside your full time job or over the weekends.</h1>
                 </div>
                 {/* Learning Animation */}

@@ -7,6 +7,7 @@ import ReferralHiring from 'animations/ReferralHiring.json';
 import google from 'animations/google.json';
 import zoho from 'animations/zoho.json';
 import amazon from 'animations/amazon.json';
+import LinkedIn from 'animations/LinkedIn.json';
 import Apple from 'animations/Apple.json';
 import Swiggy from 'animations/Swiggy.json';
 import Lottie from 'lottie-react';
@@ -37,7 +38,7 @@ const Referral = () => {
                     <Lottie className='w-36 h-36' animationData={google} loop={true} />
                     <Lottie className='w-28 h-28' animationData={zoho} loop={true} />
                     <Lottie className='w-36 h-36' animationData={amazon} loop={true} />
-                    <Lottie className='w-36 h-36' animationData={amazon} loop={true} />
+                    <Lottie className='w-32 h-32' animationData={LinkedIn} loop={true} />
                     <Lottie className='w-36 h-36' animationData={Apple} loop={true} />
                     <Lottie className='w-36 h-36' animationData={Swiggy} loop={true} />
                     <div className='flex items-center justify-center'>
