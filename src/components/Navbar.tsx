@@ -21,12 +21,16 @@ const Navbar = (props) => {
 
             {/* NavItems for Large Devices */}
             <ul className='md:flex space-x-12 hidden'>
-                {
-                    navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} key={path}
-                        offset={-100} className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary first:text-brandPrimary'>{link}</Link>)
-                }
+                {navItems.map(({ link, path }) => (
+                    <React.Fragment key={path}>
+                        {path === 'about' ? (
+                            <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary first:text-brandPrimary' to="/about">About</NavLink>
+                        ) : (
+                            <Link to={path} spy={true} smooth={true} offset={-100} className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary first:text-brandPrimary'>{link}</Link>
+                        )}
+                    </React.Fragment>
+                ))}
             </ul>
-            <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary first:text-brandPrimary' to="/about">About</NavLink>
 
             {/* Find a Mentor */}
             <button
