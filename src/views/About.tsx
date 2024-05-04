@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from 'brand/logo_transparent.png';
 import { NavLink } from 'react-router-dom';
 import HeroSection from '../components/about/HeroSection';
@@ -7,8 +7,15 @@ import WhyWe from '../components/about/WhyWe';
 import Commitment from '../components/about/Commitment';
 import TalkToExperts from '../components/about/TalkToExperts';
 import Perks from '../components/about/Perks';
+import FindMentorModal from '../components/modal/FindMentorModal';
 
 const About = () => {
+
+    const [showEnquiry, setShowEnquiry] = useState(false);
+
+    const toggleEnquiry = () => {
+        setShowEnquiry(!showEnquiry);
+    };
 
     const Header = () => {
         return (
@@ -22,7 +29,9 @@ const About = () => {
                 </ul>
 
                 {/* Find a Mentor */}
-                <button className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
+                <button
+                    onClick={toggleEnquiry}
+                    className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
                     Find a Mentor
                 </button>
             </header>
@@ -32,12 +41,13 @@ const About = () => {
     return (
         <div>
             <Header />
-            <HeroSection/>
-            <WhatIsMentorHints/>
-            <WhyWe/>
-            <Commitment/>
-            <TalkToExperts/>
-            <Perks/>
+            <HeroSection />
+            <WhatIsMentorHints />
+            <WhyWe />
+            <Commitment />
+            <TalkToExperts toggleEnquiry={toggleEnquiry}/>
+            <Perks />
+            <FindMentorModal showModal={showEnquiry} toggleModal={toggleEnquiry} />
         </div>
     );
 };
