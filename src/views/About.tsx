@@ -6,6 +6,7 @@ import WhatIsMentorHints from '../components/about/WhatIsMentorHints';
 import WhyWe from '../components/about/WhyWe';
 import Commitment from '../components/about/Commitment';
 import TalkToExperts from '../components/about/TalkToExperts';
+import Perks from '../components/about/Perks';
 
 const About = () => {
 
@@ -36,6 +37,7 @@ const About = () => {
             <WhyWe/>
             <Commitment/>
             <TalkToExperts/>
+            <Perks/>
         </div>
     );
 };

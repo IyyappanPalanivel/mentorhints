@@ -9,7 +9,7 @@ const Commitment = () => {
                 <div className='md:w-2/3 justify-between flex flex-col'>
                     <h1 className='font-poppins font-extrabold text-4xl'>Our Commitment to Excellence</h1>
                     <p className='py-2 font-poppins text-base text-gray'>
-                        At <a className='font-semibold text-base text-brandPrimary'>Mentorhints</a>, excellence is not just a goal - it's our standard. We're committed to delivering the highest quality training programs and unparalleled customer service to ensure that every student has a positive and rewarding learning experience. Join us at *r MENTORHINTS/ update our link here *r and take the first step towards a brighter future in technology. Whether you're looking to launch a new career, advance in your current role, or simply stay ahead of the curve, we're here to help you succeed.
+                        At <a className='font-semibold text-base text-brandPrimary'>Mentorhints</a>, excellence is not just a goal - it's our standard. We're committed to delivering the highest quality training programs and unparalleled customer service to ensure that every student has a positive and rewarding learning experience. Join us at <a className='font-semibold text-base text-brandPrimary'>Mentorhints</a> and take the first step towards a brighter future in technology. Whether you're looking to launch a new career, advance in your current role, or simply stay ahead of the curve, we're here to help you succeed.
                     </p>
 
                     <h1 className='font-poppins font-extrabold text-4xl'>Key features of our online course</h1>
