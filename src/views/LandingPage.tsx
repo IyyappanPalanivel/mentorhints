@@ -12,6 +12,7 @@ import Footer from '../components/Footer';
 import BookTrail from '../components/BookTrail';
 import PopularMentors from '../components/PopularMentors';
 import FindMentorModal from '../components/modal/FindMentorModal';
+import MentorDetailsModal from '../components/modal/MentorDetailsModal';
 
 const LandingPage = () => {
 
