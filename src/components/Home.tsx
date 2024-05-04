@@ -3,7 +3,10 @@ import React from 'react';
 import Interview from 'animations/Interview.json'
 import { TypeAnimation } from 'react-type-animation';
 
-const Home = () => {
+const Home = (props) => {
+
+    const { toggleEnquiry } = props;
+
     return (
         <div className='max-w-full bg-skyBlue pt-28 pb-20 items-center justify-center flex flex-col'>
 
@@ -40,7 +43,9 @@ const Home = () => {
 
             <div>
                 {/* Find a Mentor */}
-                <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-poppins font-semibold text-2xl transition-all duration-300'>
+                <button
+                    onClick={toggleEnquiry}
+                    className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold text-2xl transition-all duration-300'>
                     Find a Mentor
                 </button>
             </div>

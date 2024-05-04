@@ -1,7 +1,10 @@
 import React from 'react';
 import GroupDiscuss from 'assets/GroupDiscuss.png';
 
-const Join = () => {
+const Join = (props) => {
+
+    const { toggleEnquiry } = props;
+
     return (
         <div className='bg-lightBlue flex flex-col md:flex-row items-center justify-center gap-8 p-4 md:p-16'>
             <div>
@@ -17,7 +20,9 @@ const Join = () => {
                 <h1 className='text-xs md:text-base font-poppins font-normal text-gray py-6'>Start learning by registering for free</h1>
 
                 {/* Find a Mentor */}
-                <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
+                <button
+                    onClick={toggleEnquiry}
+                    className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
                     Find a Mentor
                 </button>
             </div>

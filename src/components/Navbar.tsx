@@ -3,7 +3,9 @@ import logo from 'brand/logo_transparent.png';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    const { toggleEnquiry } = props;
 
     const navItems = [
         { link: 'Home', path: 'home' },
@@ -27,7 +29,9 @@ const Navbar = () => {
             <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary first:text-brandPrimary' to="/about">About</NavLink>
 
             {/* Find a Mentor */}
-            <button className='bg-brandSecondary py-1 px-3 border-2 rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
+            <button
+                onClick={toggleEnquiry}
+                className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
                 Find a Mentor
             </button>
         </header>

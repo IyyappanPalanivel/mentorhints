@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Home from '../components/Home';
 import HowItWorks from '../components/HowItWorks';
@@ -11,25 +11,34 @@ import Join from '../components/Join';
 import Footer from '../components/Footer';
 import BookTrail from '../components/BookTrail';
 import PopularMentors from '../components/PopularMentors';
+import FindMentorModal from '../components/modal/FindMentorModal';
 
 const LandingPage = () => {
+
+    const [showEnquiry, setShowEnquiry] = useState(false);
+
+    const toggleEnquiry = () => {
+        setShowEnquiry(!showEnquiry);
+    };
+
     return (
         <>
-        <Navbar/>
-        <Home/>
-        <PopularMentors/>
-        <HowItWorks/>
-        <LearnYourWay/>
-        <Referral/>
-        <GetStarted/>
-        <Feedback/>
-        <Blogs/>
-        <Join/>
-        <Footer/>
-        {/* Conditional rendering for BookTrail component */}
-        <div className="fixed bottom-0 w-full sm:hidden"> {/* Apply fixed positioning only on small screens */}
-            <BookTrail/>
-        </div>
+            <Navbar toggleEnquiry={toggleEnquiry} />
+            <Home toggleEnquiry={toggleEnquiry} />
+            <PopularMentors />
+            <HowItWorks />
+            <LearnYourWay />
+            <Referral />
+            <GetStarted />
+            <Feedback />
+            <Blogs />
+            <Join toggleEnquiry={toggleEnquiry} />
+            <Footer />
+            <FindMentorModal showModal={showEnquiry} toggleModal={toggleEnquiry} />
+            {/* Conditional rendering for BookTrail component */}
+            <div className="fixed bottom-0 w-full sm:hidden"> {/* Apply fixed positioning only on small screens */}
+                <BookTrail />
+            </div>
         </>
     );
 };
