@@ -3,6 +3,7 @@ import logo from 'brand/logo_transparent.png';
 import { NavLink } from 'react-router-dom';
 import HeroSection from '../components/about/HeroSection';
 import WhatIsMentorHints from '../components/about/WhatIsMentorHints';
+import WhyWe from '../components/about/WhyWe';
 
 const About = () => {
 
@@ -30,6 +31,7 @@ const About = () => {
             <Header />
             <HeroSection/>
             <WhatIsMentorHints/>
+            <WhyWe/>
         </div>
     );
 };
