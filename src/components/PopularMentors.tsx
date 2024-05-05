@@ -68,7 +68,7 @@ const PopularMentors = () => {
         return (
             <div
                 onClick={handleCardClick}
-                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] m-2 md:m-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300">
+                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] ml-4 md:ml-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300 flex-shrink-0 flex-grow-0 w-72 mr-4">
                 {/* Profile Image */}
                 <img className='w-full aspect-square object-cover rounded-lg transform transition duration-500 hover:scale-95' src={image} alt='' />
                 {/* Name & Experience */}
@@ -119,9 +119,9 @@ const PopularMentors = () => {
                 </div>
 
                 {/* Mentors List */}
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto">
+                <div className="flex overflow-x-auto pb-4">
                     {filteredDevs.map((dev) => (
-                        <DevCard key={dev.name} {...dev} onClick={handleCardClick}/>
+                        <DevCard key={dev.name} {...dev} onClick={handleCardClick} />
                     ))}
                 </div>
             </div>
