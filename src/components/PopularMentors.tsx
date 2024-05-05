@@ -68,7 +68,7 @@ const PopularMentors = () => {
         return (
             <div
                 onClick={handleCardClick}
-                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] ml-4 md:ml-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300 flex-shrink-0 flex-grow-0 w-72 mr-4">
+                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] ml-4 md:ml-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300 flex-shrink-0 flex-grow-0 w-72 mr-4 mt-2">
                 {/* Profile Image */}
                 <img className='w-full aspect-square object-cover rounded-lg transform transition duration-500 hover:scale-95' src={image} alt='' />
                 {/* Name & Experience */}
