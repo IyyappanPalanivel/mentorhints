@@ -1,6 +1,10 @@
 // Brand Config
 const BrandName = "Grey Matrix";
 
+export const ZOHO_CONFIG = {
+    ZOHO_FORM_LINK: 'https://forms.zohopublic.in/abineshofficial001/form/Students1/formperma/FzjK4ok0p9S0LA0x1nTrp05yOK5rlQXx8_dcAOgL00Q'
+}
+
 // Email config
 export const EMAIL_CONFIG = {
     ENQUIRY_SUBJECT: "Inquiry Regarding Software Services",
