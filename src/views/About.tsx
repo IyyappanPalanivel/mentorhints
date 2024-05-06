@@ -20,7 +20,10 @@ const About = () => {
     const Header = () => {
         return (
             <header className='w-full bg-white flex justify-around items-center p-2 fixed'>
-                <img className='w-40 h-12 object-cover' src={logo} alt='' />
+                {/* Brand MentorHints Logo */}
+                <a href='/' className='text-2xl font-semibold flex items-center space-x-3'>
+                    <img className='w-40 h-12 object-cover' src={logo} alt='' />
+                </a>
 
                 {/* NavItems for Large Devices */}
                 <ul className='md:flex space-x-12 hidden'>
@@ -45,7 +48,7 @@ const About = () => {
             <WhatIsMentorHints />
             <WhyWe />
             <Commitment />
-            <TalkToExperts toggleEnquiry={toggleEnquiry}/>
+            <TalkToExperts toggleEnquiry={toggleEnquiry} />
             <Perks />
             <FindMentorModal showModal={showEnquiry} toggleModal={toggleEnquiry} />
         </div>

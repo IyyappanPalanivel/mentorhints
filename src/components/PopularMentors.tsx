@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import underline from 'assets/underline.png';
+import Ramya from 'assets/mentors/Ramya.jpeg';
 import Arun from 'assets/mentors/Arun.jpeg';
 import Iyyappan from 'assets/mentors/Iyyappan.jpeg';
 import Vengadesh from 'assets/mentors/Vengadesh.jpeg';
+import Nalin from 'assets/mentors/Nalin.jpeg';
 import Ram from 'assets/mentors/Ram.jpeg';
 import MentorDetailsModal from './modal/MentorDetailsModal';
 
@@ -16,11 +18,18 @@ const PopularMentors = () => {
 
     const devData = [
         {
+            name: 'Ramya',
+            image: Ramya,
+            experience: '5 yrs',
+            designation: 'UI/UX Designer @Techno Tackle Software Solutions',
+            skills: 'Figma, Adobe Illustrator, Photoshop, Graphic Designing',
+        },
+        {
             name: 'Iyyappan',
             image: Iyyappan,
             experience: '4 yrs',
             designation: 'Mobile App Developer @Techno Tackle Software Solutions',
-            skills: 'Native iOS, Native Android, React Native, Java, Kotlin, Swift,',
+            skills: 'Native iOS, Native Android, React Native, Java, Kotlin, Swift',
         },
         {
             name: 'Arun',
@@ -35,6 +44,13 @@ const PopularMentors = () => {
             experience: '10 yrs',
             designation: 'Backend Developer @Google',
             skills: 'Java, Oracle, Spring boot, Kafka, Backend',
+        },
+        {
+            name: 'Nalin',
+            image: Nalin,
+            experience: '3 yrs',
+            designation: 'Mobile App Developer @Xenovex',
+            skills: 'React Native, Javascript, Typescript,iOS, Android',
         },
         {
             name: 'Ram Kumar',
@@ -68,7 +84,7 @@ const PopularMentors = () => {
         return (
             <div
                 onClick={handleCardClick}
-                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] m-2 md:m-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300">
+                className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm cursor-pointer select-none border border-[#e9e5eb] ml-4 md:ml-0 hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300 flex-shrink-0 flex-grow-0 w-72 mr-4 mt-2">
                 {/* Profile Image */}
                 <img className='w-full aspect-square object-cover rounded-lg transform transition duration-500 hover:scale-95' src={image} alt='' />
                 {/* Name & Experience */}
@@ -92,7 +108,7 @@ const PopularMentors = () => {
     };
 
     return (
-        <div className='max-w-full items-center justify-center py-4 md:p-14 bg-lightBlue' id='mentors'>
+        <div className='max-w-full items-center justify-center py-4 md:py-14 bg-lightBlue' id='mentors'>
             {/* Section title: Most Popular Mentors */}
             <div className='flex md:flex-row text-center items-center justify-center '>
                 <h1 className='text-2xl md:text-4xl font-poppins font-semibold'>Most</h1>
@@ -103,7 +119,7 @@ const PopularMentors = () => {
             </div>
 
             {/* Domains List*/}
-            <div className="flex flex-col pt-8">
+            <div className="flex flex-col pt-8 md:pl-14">
                 {/* Domains List */}
                 <div className="flex overflow-x-auto mb-4 pl-4 md:pl-0">
                     {domains.map((domain) => (
@@ -119,9 +135,9 @@ const PopularMentors = () => {
                 </div>
 
                 {/* Mentors List */}
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mx-auto">
+                <div className="flex overflow-x-auto pb-4">
                     {filteredDevs.map((dev) => (
-                        <DevCard key={dev.name} {...dev} onClick={handleCardClick}/>
+                        <DevCard key={dev.name} {...dev} onClick={handleCardClick} />
                     ))}
                 </div>
             </div>
