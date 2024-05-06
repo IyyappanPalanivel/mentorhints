@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import underline from 'assets/underline.png';
+import Ramya from 'assets/mentors/Ramya.jpeg';
 import Arun from 'assets/mentors/Arun.jpeg';
 import Iyyappan from 'assets/mentors/Iyyappan.jpeg';
 import Vengadesh from 'assets/mentors/Vengadesh.jpeg';
+import Nalin from 'assets/mentors/Nalin.jpeg';
 import Ram from 'assets/mentors/Ram.jpeg';
 import MentorDetailsModal from './modal/MentorDetailsModal';
 
@@ -16,11 +18,18 @@ const PopularMentors = () => {
 
     const devData = [
         {
+            name: 'Ramya',
+            image: Ramya,
+            experience: '5 yrs',
+            designation: 'UI/UX Designer @Techno Tackle Software Solutions',
+            skills: 'Figma, Adobe Illustrator, Photoshop, Graphic Designing',
+        },
+        {
             name: 'Iyyappan',
             image: Iyyappan,
             experience: '4 yrs',
             designation: 'Mobile App Developer @Techno Tackle Software Solutions',
-            skills: 'Native iOS, Native Android, React Native, Java, Kotlin, Swift,',
+            skills: 'Native iOS, Native Android, React Native, Java, Kotlin, Swift',
         },
         {
             name: 'Arun',
@@ -35,6 +44,13 @@ const PopularMentors = () => {
             experience: '10 yrs',
             designation: 'Backend Developer @Google',
             skills: 'Java, Oracle, Spring boot, Kafka, Backend',
+        },
+        {
+            name: 'Nalin',
+            image: Nalin,
+            experience: '3 yrs',
+            designation: 'Mobile App Developer @Xenovex',
+            skills: 'React Native, Javascript, Typescript,iOS, Android',
         },
         {
             name: 'Ram Kumar',
@@ -92,7 +108,7 @@ const PopularMentors = () => {
     };
 
     return (
-        <div className='max-w-full items-center justify-center py-4 md:p-14 bg-lightBlue' id='mentors'>
+        <div className='max-w-full items-center justify-center py-4 md:py-14 bg-lightBlue' id='mentors'>
             {/* Section title: Most Popular Mentors */}
             <div className='flex md:flex-row text-center items-center justify-center '>
                 <h1 className='text-2xl md:text-4xl font-poppins font-semibold'>Most</h1>
@@ -103,7 +119,7 @@ const PopularMentors = () => {
             </div>
 
             {/* Domains List*/}
-            <div className="flex flex-col pt-8">
+            <div className="flex flex-col pt-8 md:pl-14">
                 {/* Domains List */}
                 <div className="flex overflow-x-auto mb-4 pl-4 md:pl-0">
                     {domains.map((domain) => (
