@@ -1,4 +1,5 @@
 import './App.css';
+import BlogDetail from './components/blogs/BlogDetail';
 import About from './views/About';
 import LandingPage from './views/LandingPage';
 import PrivacyPolicy from './views/PrivacyPolicy';
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/blog/:id" element={<BlogDetail />}></Route>
       </Routes>
     </BrowserRouter>
   )

@@ -1,6 +1,8 @@
 import React from 'react';
 import underline from 'assets/underline.png';
 import TellGoal from 'assets/TellGoal.png';
+import GetConnected from 'assets/GetConnected.png';
+import Webinar from 'assets/Webinar.png';
 
 const GetStarted = () => {
 
@@ -8,29 +10,32 @@ const GetStarted = () => {
         {
             step: '01',
             title: 'Tell us your goals',
+            image: TellGoal,
             description:
                 'Share the subject you need help with along with your contact details so we can get in touch with you',
         },
         {
             step: '02',
             title: 'Get Connected',
+            image: GetConnected,
             description:
                 'We go beyond basic matching algorithms. Our dedicated team handpicks tutors based on your needs',
         },
         {
             step: '03',
             title: 'Start Learning',
+            image: Webinar,
             description:
                 'Take your learning to the next level with tailored guidance',
         },
         // Add more card objects here
     ]
 
-    const Card = ({ step, title, description }) => {
+    const Card = ({ step, title,image, description }) => {
         return (
             <div className="mx-auto bg-white rounded-lg shadow-md max-w-sm hover:-translate-y-2 hover:border-b-4 hover:border-brandPrimary transition-all duration-300">
                 <div className='flex items-center justify-center bg-brandPrimary rounded-t-lg'>
-                    <img className='w-44 h-44' src={TellGoal} alt=''/> 
+                    <img className='w-auto h-44' src={image} alt=''/> 
                 </div>
                 {/* <div className="flex justify-between px-4 py-3">
                     <span className="text-xl font-bold text-gray-800">{step} Step</span>
