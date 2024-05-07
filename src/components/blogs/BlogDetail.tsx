@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-// import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useParams } from 'react-router-dom';
 import logo from 'assets/brand/logo.png';
 import { getBlogDetailsById } from '../../datas/BlogDatas';
+import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 const BlogDetail = (props) => {
 
@@ -46,8 +47,7 @@ const BlogDetail = (props) => {
             }
 
             {/* <h3>{post.desc}</h3> */}
-            {/* <ReactMarkdown children={blogData.description}
-                escapeHtml={false} className='leading-9' /> */}
+            {/* <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown> */}
         </div>
     );
 };

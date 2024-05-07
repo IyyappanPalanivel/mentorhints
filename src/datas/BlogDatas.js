@@ -85,11 +85,9 @@ const blogsData = [
         
         Recently, I did this too. For nearly, 5-6 months, I didn't touch my Naukri profile. I did some updates on it, especially for this blog. I will show the screenshot of how much my profile got pumped up like how many recruiters saw my profile. 
         
-        [PLEASE ADD A SCREENSHOT BASED ON THE ABOVE LINE]
         
         I also recommended it to one of my friends. See how much his profile got pumped up.
         
-        [PLEASE ADD A SCREENSHOT BASED ON THE ABOVE LINE]
         
         He is getting 5-6 interview calls daily, because of the demand his domain has and he also has a proper skill as well. But it's secondary. I have talked about it in many of my previous YouTube videos, but, if you are not getting any interview calls, this blog will help you.
         
@@ -159,14 +157,14 @@ const blogsData = [
          Most of the people don't know about this. Recently I came to know about it. What that is... if you worked in a company; your manager or your director or your senior person can mark you as a good person in your profile. Even your clients can give you a review like you are an honest guy, a hard-working guy, or a person who works after hours too. Like this, if you get a good review, your profile will rise. if you want to be a freelancer in the future, these kinds of reviews are very important. If you are working with a top client and they give you a positive review, that's too good!
         But if you're a fresher, ask your professor or HOD. Request them to give a review of your profile's endorsement. That will give you an add-on value to your profile. So, try it. Recently I've also trying to get endorsement for my profile from my previous company colleagues So you try it too. So these are the tips, I would like to share with you. I have created my profile. You can see for any changes in the future. Follow my profile. The link is given below.
         
-        [PLEASE PROVIDE YOUR PROFILE LINK]
+        instagram.com/abinofficial2020
         
         If you have any doubts, you can reach me anytime on Instagram at  Abinofficial2020.
         
         I hope you find this blog helpful. If you want to watch this content in video format,
         don't forget to subscribe to our YouTube channel.
         
-        [PROVIDE YOUTUBE CHANNEL LINK]
+        https://www.youtube.com/@ABINChannel
         
         Join our tech network. Thanks for reading.
         
