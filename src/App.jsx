@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import BlogDetail from './components/blogs/BlogDetail';
 import About from './views/About';
