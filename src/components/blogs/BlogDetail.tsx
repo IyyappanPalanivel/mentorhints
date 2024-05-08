@@ -8,6 +8,7 @@ import Footer from '../Footer';
 
 const BlogDetail = (props) => {
 
+    const { toggleEnquiry } = props;
     // const {blogData} = props;
     const { id } = useParams();
 
@@ -27,17 +28,24 @@ const BlogDetail = (props) => {
 
     const Header = () => {
         return (
-            <header className='w-full bg-brandPrimary flex justify-around items-center p-2 fixed top-0 left-0 right-0'>
+            <header className='w-full bg-white flex justify-around items-center p-2 fixed top-0 left-0 right-0'>
                 {/* Brand MentorHints Logo */}
                 <a href='/' className='text-2xl font-semibold flex items-center space-x-3'>
                     <img className='w-40 h-12 object-cover' src={logo} alt='' />
                 </a>
 
                 {/* NavItems for Large Devices */}
-                {/* <ul className='md:flex space-x-12 hidden'>
-                    <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary' to="/">Home</NavLink>
-                    <NavLink className='block cursor-pointer text-sm font-poppins font-normal hover:text-brandPrimary text-brandPrimary' to="/about">About</NavLink>
-                </ul> */}
+                <ul className='md:flex space-x-12 hidden'>
+                    {/* <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary' to="/">Home</NavLink> */}
+                    <NavLink className='block cursor-pointer text-sm font-poppins font-normal hover:text-brandPrimary text-brandPrimary' to="/blog">Blog</NavLink>
+                </ul>
+
+                {/* Find a Mentor */}
+                <button
+                    onClick={toggleEnquiry}
+                    className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
+                    Find a Mentor
+                </button>
             </header>
         )
     }
