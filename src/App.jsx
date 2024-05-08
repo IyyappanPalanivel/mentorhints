@@ -9,12 +9,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
 
-  const [showEnquiry, setShowEnquiry] = useState(false);
-
-  const toggleEnquiry = () => {
-    setShowEnquiry(!showEnquiry);
-  };
-
   return (
     <BrowserRouter>
       <Routes>
@@ -22,7 +16,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-        <Route path="/blog/:id" element={<BlogDetail toggleEnquiry={toggleEnquiry}/>}></Route>
+        <Route path="/blog/:id" element={<BlogDetail />}></Route>
       </Routes>
     </BrowserRouter>
   )

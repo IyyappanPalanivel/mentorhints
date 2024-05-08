@@ -5,15 +5,16 @@ import { getBlogDetailsById } from '../../datas/BlogDatas';
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Footer from '../Footer';
+import FindMentorModal from '../modal/FindMentorModal';
 
 const BlogDetail = (props) => {
 
-    const { toggleEnquiry } = props;
     // const {blogData} = props;
     const { id } = useParams();
 
     const [blogData, setBlogData] = useState();
     const [body, setBody] = useState();
+    const [showEnquiry, setShowEnquiry] = useState(false);
 
     // Split the description into an array of points based on newline character (\n)
 
@@ -25,6 +26,10 @@ const BlogDetail = (props) => {
         const points = blog.body.split('\n');
         setBody(points);
     }, [])
+
+    const toggleEnquiry = () => {
+        setShowEnquiry(!showEnquiry);
+    };
 
     const Header = () => {
         return (
@@ -53,7 +58,7 @@ const BlogDetail = (props) => {
 
     return (
         <div>
-            <Header/>
+            <Header />
             <div className='px-6 md:px-20 mt-20'>
                 {
                     blogData && <>
@@ -79,7 +84,8 @@ const BlogDetail = (props) => {
                 {/* <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown> */}
             </div>
             <hr className="h-px mt-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <Footer/>
+            <Footer />
+            <FindMentorModal showModal={showEnquiry} toggleModal={toggleEnquiry} />
         </div>
 
     );
