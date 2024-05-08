@@ -5,6 +5,7 @@ import { getBlogDetailsById } from '../../datas/BlogDatas';
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Footer from '../Footer';
+import FindMentorModal from '../modal/FindMentorModal';
 
 const BlogDetail = (props) => {
 
@@ -13,6 +14,7 @@ const BlogDetail = (props) => {
 
     const [blogData, setBlogData] = useState();
     const [body, setBody] = useState();
+    const [showEnquiry, setShowEnquiry] = useState(false);
 
     // Split the description into an array of points based on newline character (\n)
 
@@ -25,19 +27,30 @@ const BlogDetail = (props) => {
         setBody(points);
     }, [])
 
+    const toggleEnquiry = () => {
+        setShowEnquiry(!showEnquiry);
+    };
+
     const Header = () => {
         return (
-            <header className='w-full bg-brandPrimary flex justify-around items-center p-2 fixed top-0 left-0 right-0'>
+            <header className='w-full bg-white flex justify-around items-center p-2 fixed top-0 left-0 right-0'>
                 {/* Brand MentorHints Logo */}
                 <a href='/' className='text-2xl font-semibold flex items-center space-x-3'>
                     <img className='w-40 h-12 object-cover' src={logo} alt='' />
                 </a>
 
                 {/* NavItems for Large Devices */}
-                {/* <ul className='md:flex space-x-12 hidden'>
-                    <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary' to="/">Home</NavLink>
-                    <NavLink className='block cursor-pointer text-sm font-poppins font-normal hover:text-brandPrimary text-brandPrimary' to="/about">About</NavLink>
-                </ul> */}
+                <ul className='md:flex space-x-12 hidden'>
+                    {/* <NavLink className='block cursor-pointer text-sm font-poppins font-normal text-navTextColor hover:text-brandPrimary' to="/">Home</NavLink> */}
+                    <NavLink className='block cursor-pointer text-sm font-poppins font-normal hover:text-brandPrimary text-brandPrimary' to="/blog">Blog</NavLink>
+                </ul>
+
+                {/* Find a Mentor */}
+                <button
+                    onClick={toggleEnquiry}
+                    className='bg-brandSecondary py-1 px-3 border-2 border-black rounded-lg hover:bg-brandPrimary font-poppins font-semibold transition-all duration-300'>
+                    Find a Mentor
+                </button>
             </header>
         )
     }
@@ -45,7 +58,7 @@ const BlogDetail = (props) => {
 
     return (
         <div>
-            <Header/>
+            <Header />
             <div className='px-6 md:px-20 mt-20'>
                 {
                     blogData && <>
@@ -71,7 +84,8 @@ const BlogDetail = (props) => {
                 {/* <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown> */}
             </div>
             <hr className="h-px mt-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-            <Footer/>
+            <Footer />
+            <FindMentorModal showModal={showEnquiry} toggleModal={toggleEnquiry} />
         </div>
 
     );
