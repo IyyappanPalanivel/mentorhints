@@ -49,7 +49,7 @@ const Blogs = () => {
         // Split the description into an array of points based on newline character (\n)
         const points = description.split('\n');
         return (
-            <div className="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:-translate-y-2 transition-all duration-300">
+            <div className="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:-translate-y-2 transition-all duration-300 overflow-hidden cursor-pointer select-none flex-shrink-0 flex-grow-0 w-72 md:w-auto mr-4 mb-2">
                 <a href="#">
                     <img className="rounded-t-lg w-full h-64 object-fill" src={image} alt="" />
                 </a>
@@ -73,7 +73,7 @@ const Blogs = () => {
     }
 
     return (
-        <div className='max-w-full items-center justify-center p-3 md:p-8' id='blog'>
+        <div className='max-w-full items-center justify-center py-3 md:p-8' id='blog'>
             {/* Section title */}
             <div className='flex flex-col items-center'>
                 <div>
@@ -86,10 +86,10 @@ const Blogs = () => {
             </div>
 
             {/* Section desc */}
-            <h1 className='text-base font-poppins font-normal text-gray text-center py-6'>Various versions have evolved over the years, sometimes by accident,</h1>
+            <h1 className='text-base font-poppins font-normal text-gray text-center py-6 p-3'>Various versions have evolved over the years, sometimes by accident,</h1>
 
             {/* Blogs List */}
-            <div className='mt-4 grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto gap-12 mb-2'>
+            <div className='mt-4 md:grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto gap-12 flex overflow-x-auto pl-3 md:pl-0'>
                 {
                     blogsData.map(blog =>
                         <Blog key={blog.id} {...blog} />

@@ -35,7 +35,7 @@ const Feedback = () => {
 
     const Feedback = ({ id, username, designation, description }) => {
         return (
-            <div className="feedback-card mx-auto bg-white rounded-lg shadow-md max-w-sm p-4">
+            <div className="feedback-card mx-auto bg-white rounded-lg shadow-md max-w-sm p-4 overflow-hidden cursor-pointer select-none flex-shrink-0 flex-grow-0 w-72 md:w-auto border mr-4">
                 <div className='flex justify-between'>
                     {/* User details */}
                     <div className='flex gap-2'>
@@ -55,7 +55,7 @@ const Feedback = () => {
     }
 
     return (
-        <div className='max-w-full items-center justify-center p-4 md:p-14'>
+        <div className='max-w-full items-center justify-center py-4 md:p-14'>
             {/* Section title: Student Feedback */}
             <div className='flex md:flex-row text-center items-center justify-center '>
                 <h1 className='text-2xl md:text-4xl font-poppins font-semibold'>Student</h1>
@@ -66,10 +66,10 @@ const Feedback = () => {
             </div>
 
             {/* Section desc */}
-            <h1 className='text-base font-poppins font-normal text-gray text-center py-6'>Various versions have evolved over the years, sometimes by accident,</h1>
+            <h1 className='text-base font-poppins font-normal text-gray text-center py-6 px-4'>Various versions have evolved over the years, sometimes by accident,</h1>
 
             {/* Feedbacks List */}
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto md:gap-12'>
+            <div className='md:grid lg:grid-cols-3 md:grid-cols-2 md:w-11/12 grid-cols-1 mx-auto md:gap-12 flex overflow-x-auto pl-4 md:pl-0'>
                 {
                     feedbacksData.map(feedback =>
                         <Feedback key={feedback.id} {...feedback} />
