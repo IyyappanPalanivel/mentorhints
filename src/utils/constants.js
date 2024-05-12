@@ -2,7 +2,7 @@
 const BrandName = "Grey Matrix";
 
 export const ZOHO_CONFIG = {
-    ZOHO_FORM_LINK: 'https://forms.zohopublic.in/abineshofficial001/form/Students1/formperma/FzjK4ok0p9S0LA0x1nTrp05yOK5rlQXx8_dcAOgL00Q'
+    ZOHO_FORM_LINK: 'https://forms.zohopublic.com/abinesh121195/form/ContactUs/formperma/4z8GFJug72iaGesiRjaKA-Gy_xlOFcG2nUs-wyNUFfY'
 }
 
 // Email config
