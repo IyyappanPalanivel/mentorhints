@@ -2,44 +2,47 @@ import React from 'react';
 import underline from 'assets/underline.png';
 import jenny from 'assets/feedbacks/jenny.png';
 import quatation from 'assets/feedbacks/quatation.png';
+import Gokul from 'assets/students/Gokul.jpeg';
+import saudesh from 'assets/students/saudesh.jpeg';
+import profile from 'assets/profile.png';
 
 const Feedback = () => {
 
     const feedbacksData = [
         {
             id: 1,
-            username: 'Jenny Wilson',
-            designation: 'UI-UX Designer',
+            image: saudesh,
+            username: 'Saudesh',
+            designation: 'Backend Developer',
             description:
-                `Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
-                Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.`,
+                `I completed back-end development course & got an interview referral by from Arun at MentorHints which helped me to  attend my interview. And I have learned a lot . Happy to be a part of mentorhints `,
         },
         {
             id: 2,
-            username: 'Guy Hawkins',
-            designation: 'UI-UX Designer',
+            image: Gokul,
+            username: 'Gokul',
+            designation: 'Web Developer',
             description:
-                `Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
-                Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.`,
+                `Im a college student, eager to learn Web development. Mentorhints helped me to learnthe basics and intermediate concept in tamil .Soi understand the concept very well then i created my own portfolio website during second year. Overall completely satisfied. Highly recommend.`,
         },
         {
             id: 3,
-            username: 'Vijay',
-            designation: 'Mobile App Developer',
+            image: profile,
+            username: 'Arunan',
+            designation: 'Frontend Developer',
             description:
-                `Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
-                Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst.`,
+                `I have 4yrs of experience & once i got referral from mentorhints tech network, i was able to switch over with 80% of hike so Thank you Mentorhints which took me a step ahead.`,
         },
         // Add more card objects here
     ]
 
-    const Feedback = ({ id, username, designation, description }) => {
+    const Feedback = ({ id, image, username, designation, description }) => {
         return (
             <div className="feedback-card mx-auto bg-white rounded-lg shadow-md max-w-sm p-4 overflow-hidden cursor-pointer select-none flex-shrink-0 flex-grow-0 w-72 md:w-auto border mr-4">
                 <div className='flex justify-between'>
                     {/* User details */}
                     <div className='flex gap-2'>
-                        <img className='w-14 h-14' src={jenny} alt='' />
+                        <img className='w-14 h-14 rounded-full object-center bg-brandPrimary' src={image} alt='' />
                         <div>
                             <h1 className='font-poppins text-base font-semibold'>{username}</h1>
                             <p className='font-poppins text-sm font-normal'>{designation}</p>
