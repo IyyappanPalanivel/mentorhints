@@ -1,5 +1,5 @@
 // Brand Config
-const BrandName = "Grey Matrix";
+const BrandName = "Mentor Hints";
 
 export const ZOHO_CONFIG = {
     ZOHO_FORM_LINK: 'https://forms.zohopublic.com/abinesh121195/form/ContactUs/formperma/4z8GFJug72iaGesiRjaKA-Gy_xlOFcG2nUs-wyNUFfY'
